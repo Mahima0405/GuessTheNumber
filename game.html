@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer async src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h4 id="lefttop">Is Secret_Number == Guessed_Number?</h4>
+        <h4 id="righttop">Number lies between 1 to 20</h4>
+
+        <h1>🎊🎊Guess the Number🎊🎊</h1>
+        <img src="images.png" alt="Secret Number Behind">
+        <button class="againbtn" onclick="startAgain()">PLAY AGAIN</button>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <div class="mainsec">
+        <div class="left">
+            <input type="number" id="num">
+            <button class="btnCheck" onclick="guessing()">CHECK</button>
+        </div>
+
+        <div class="right">
+            <p>🙋‍♀️🙋‍♂️<span class="message">Start Guessing...</span>🙋‍♀️🙋‍♂️</p>
+            <p>🕵️‍♀️💂‍♀️Score: <span id="curr">20</span>🕵️‍♀️💂‍♀️</p>
+            <p>✨✨Highest Score: <span id="MaxScore">0</span>✨✨</p>
+        </div>
+    </div>
+</body>
+
+</html>
